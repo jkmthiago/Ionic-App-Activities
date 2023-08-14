@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Movies
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let movie of moviesList">
+    <ion-item>
+      <ion-label>{{movie.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
